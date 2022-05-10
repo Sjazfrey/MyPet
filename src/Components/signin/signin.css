@@ -1,0 +1,150 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  body {
+    background: #f3f3f3;
+    font-family: sans-serif;    
+  } 
+  a:hover {
+    color: #0080ff;
+  }
+  .boxed {   
+    background: rgba(234, 227, 236, 0.9);
+    padding: 40px;
+    max-width: 40%;
+    margin: 60px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  }
+  .top-area {
+    list-style: none;
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  .top-area:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .top-area li a {   
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 162, 179, 0.25);
+    color: #a0b3b0;
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+    margin: auto;
+  
+  }
+  .top-area li a:hover {
+    background: #0080ff;
+    color: #ffffff;
+  }
+  .top-area .active a {
+    background: #1da1f2;
+    color: #ffffff;
+    font-size: 17px;
+
+  }
+   welcome back
+  .tab-content > div:last-child {
+    display: none;
+  }   
+  h1 {
+    text-align: center;
+    color: black;
+  }
+
+  label {
+    position: relative; 
+    color: dark grey;  
+    pointer-events: none;
+    font-size: 18px;
+  }
+  label .req {
+    margin: 2px;
+    color: #1da1f2;
+  }
+  label.active {  
+    font-size: 14px;
+  }
+  label.active .req {
+    opacity: 0;
+  }
+  label.highlight {
+    color: black;
+  }
+  input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 50%;
+    height: 50%;   
+    color: black;
+    margin-left: 40px;
+    border: none;
+    
+  }
+  input:focus, textarea:focus {
+    outline: 0;
+    border-color: #1da1f2;
+  }
+  textarea {
+    resize: vertical;
+  }
+  .label-field {
+    position: relative;  
+    margin-bottom: 40px;
+  }
+  .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .top-row > div:last-child {
+    margin: 0;
+  }
+  .button {
+    border: 50;
+    outline: none;   
+    padding: 3px 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1da1f2;
+    color: black;  
+    margin-left: 37%;
+  }
+  .login {
+      border: 50;
+      outline: none;   
+      padding: 3px 5px;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      background: #1da1f2;
+      color: black;  
+      margin-left: 46%;    
+  }
+  
+  .button:hover, .button:focus {
+    background: #0080ff;
+  }
+  .forgot {
+    margin-top: -20px;
+    text-align: right;
+  }
+  @media (max-width: 765px) {
+      label {
+        left: 0;
+      }    }

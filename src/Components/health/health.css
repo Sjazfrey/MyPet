@@ -1,0 +1,90 @@
+/* @media screen; */
+/* .separate{
+      padding-top: 20px;
+  }   */
+
+label{
+    color:black;
+    text-align: inline-block;
+    font-size: 20px; 
+    padding-left: 50px;   
+ } 
+ input[type=text], select {
+  width: 40%;
+  padding: 0px;
+  margin: 1px;
+  margin-left: 40px;  
+  border: 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+input[type=date], select{
+  width: 30%;
+  padding: 8px;
+  margin: 3px 0;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+label .name{
+  margin-top: 50px;
+}
+
+#main{
+  width: 940px;
+  margin: auto;
+}
+
+#main #left{
+  width: 600px;
+  float: left;
+}
+#main #right{
+  width: 300px;
+  float: right;
+}
+
+#right label{
+  color:black;
+  text-align: inline-block;
+  font-size: 20px; 
+  padding-left: 10px;   
+} 
+
+#right input[type=text] {
+  width: 20%;
+  padding: 0px;
+  margin: 1px;
+  /* margin-left: 40px;   */
+  border: 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+#right textarea{
+  width: 20%;
+  padding: 0px;
+  margin: 1px;
+  margin-left: 10px;  
+  border: 1px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  font-size: 12px;
+} 
+#right button[type=submit]{
+ margin-top:15px;
+ margin-left: 650px;
+ }
+ #right button[type=submit]:hover{
+  background-color :blue;
+  }
+ 
+
+
+
+
+/* @media (max-width: 900px) {
+  label {
+    left: 0;
+  }    } */

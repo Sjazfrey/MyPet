@@ -1,0 +1,30 @@
+::placeholder {
+    font-size: 18px; 
+    text-align: center;
+} 
+input[type=text].petPlace { 
+    width: 20%;
+    margin-left: 520px;
+    margin-top: 12%; 
+    text-align: center;    
+}
+.addpet {   
+    width: 10%;    
+    box-sizing: border-box;
+    margin-left: 580px;
+    margin-top: 3%;
+} 
+.addpet:hover, .addpet:focus {
+    background: #0080ff;
+  }
+
+#cat {
+    position: absolute;
+    left: -1000px; /*cat off the screen */
+    width: 70px;
+}
+#dog {
+    position: absolute; 
+    left: -1000px; /*dog off the screen */
+    width: 150px;
+}
