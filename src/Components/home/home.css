@@ -4,20 +4,22 @@
 } 
 input[type=text].petPlace { 
     width: 20%;
-    margin-left: 520px;
-    margin-top: 12%; 
+    margin-left: 39%;
+    margin-top: 2%; 
     text-align: center;    
 }
 .addpet {   
     width: 10%;    
     box-sizing: border-box;
-    margin-left: 580px;
-    margin-top: 3%;
+    margin-left: 44%;
+    margin-top: 2%;
 } 
 .addpet:hover, .addpet:focus {
     background: #0080ff;
-  }
-
+}
+::-webkit-scrollbar{
+    display: none;
+}
 #cat {
     position: absolute;
     left: -1000px; /*cat off the screen */

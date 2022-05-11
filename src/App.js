@@ -5,7 +5,6 @@ import Health from './Components/health/health';
 import Navbar from './Components/navbar/navbar';
 import Pictures from './Components/pictures/pictures';
 import Home from './Components/home/home';
-import Dragdrop from './Components/dragdrop/dragdrop';
 import Signin from './Components/signin/signin';
 
 

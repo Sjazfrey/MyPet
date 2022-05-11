@@ -4,8 +4,7 @@ const Delay = ({ children, waitBeforeShow = 6000 }) => {
   const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
-    console.log(waitBeforeShow);
-    setTimeout(() => {
+      setTimeout(() => {
       setIsShown(true);
     }, waitBeforeShow);
   }, [waitBeforeShow]);

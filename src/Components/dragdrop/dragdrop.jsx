@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../dropzone.css'
 import '../dragdrop/dragdrop.css';
 import { useState } from 'react';
 import { useEffect } from 'react';

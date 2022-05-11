@@ -8,8 +8,7 @@ function Home(){
 
     const [ name, setName ] = useState("");
     const [ counter, setCounter ] = useState(1)
-    // const [isShown, setIsShown] = useState(false);
-    
+       
     useEffect(() => {
          let cat = document.getElementById("cat");    
          let startTime = new Date().getTime();
@@ -53,10 +52,9 @@ function Home(){
         }
         return result;
       }
- 
-    
+     
     return(  
-      <div>
+      <div className="hidescroll">
       {/* Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html */}
       <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif"/>
      <Delay>
