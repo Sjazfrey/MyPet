@@ -2,30 +2,37 @@
     font-size: 18px; 
     text-align: center;
 } 
-input[type=text].petPlace { 
+input[type=files].petPlace { 
     width: 20%;
     margin-left: 39%;
-    margin-top: 2%; 
+    margin-top: 1%; 
     text-align: center;    
 }
 .addpet {   
     width: 10%;    
     box-sizing: border-box;
     margin-left: 44%;
-    margin-top: 2%;
+    margin-top: 1%;
 } 
 .addpet:hover, .addpet:focus {
     background: #0080ff;
 }
-::-webkit-scrollbar{
-    display: none;
+
+::-webkit-scrollbar {
+    height: 0;
 }
+/* .hidescroll {
+    overflow-x: hidden !important;
+} */
+
 #cat {
+    margin-top: -4.5%;
     position: absolute;
     left: -1000px; /*cat off the screen */
     width: 70px;
 }
 #dog {
+    margin-top: -6.0%;
     position: absolute; 
     left: -1000px; /*dog off the screen */
     width: 150px;

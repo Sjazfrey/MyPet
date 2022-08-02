@@ -1,17 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './health.css';
+import { AuthContext } from "../../firebase/context";
+import { Navigate } from "react-router-dom";
 
 function Health(){
     const [ petinfo, setPetInfo ] = useState(" ");
+    const { user } = useContext(AuthContext);
+   
+    
 
 
     return (
+     <div>
+      {!user ? (
+       
+        <Navigate to= "/login" replace={true} />
+      ) : (
         <form>
+          
           <div id="main">
+       
             <div id="left">
               <div>
               <label className="name">Name</label>
-              <input type="text" name="firstName" required />
+              <input type="text" name="firstName" required /><br/>
               <label className="dob">Date of Birth</label>
               <input type="date" name="dob" required />
             </div>
@@ -59,9 +71,14 @@ function Health(){
             </div>
              
             <button type="submit" >Submit</button>
+
+           
          </div>
-        </form>    
+        </form>  
+        )} 
+        </div>
     )
-}
+    
+      }
 
 export default Health;

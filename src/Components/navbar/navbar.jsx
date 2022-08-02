@@ -18,8 +18,12 @@ function Navbar() {
           Pictures
         </Link>
 
-        <Link className="navwords" to="/signin">
-          Sign In
+        <Link className="navwords" to="/signup">
+          Sign Up
+        </Link>
+
+        <Link className="navwords" to="/login">
+           Login
         </Link>
       </div>
     </div>
