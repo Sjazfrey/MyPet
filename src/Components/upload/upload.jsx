@@ -34,7 +34,7 @@ function Upload({picupload}) {
     if (image) {
   
     const storage=getStorage()
-      const imageRef = storageRef(storage, picupload+"/"+image.name );
+      const imageRef = storageRef(storage, picupload+"/"+image.name+Math.random() );
       uploadBytes(imageRef, image).then(() => {
         
           getDownloadURL(imageRef)
@@ -95,20 +95,22 @@ function Upload({picupload}) {
        
         <Navigate to= "/login" replace={true} />
       ) : (
+        <div>
         <header className="App-header">
            <p>Upload a Photo</p> 
           <input
-            type="file"
+            type="file"            
             accept="image/x-png,image/jpeg"
             onChange={(e) => {
               onImageChange(e);
             }}
           />
-          <button onClick={() => uploadToFirebase()}>Upload</button>
+          <button className="upload1" onClick={() => uploadToFirebase()}>Upload</button>
           {/* <button onClick={() => getFromFirebase()}>
             Get Images from Firebase
           </button> */}
           <button className="signout" onClick={() => app.auth().signOut()}>Sign Out</button>
+          </header>
           <div id="photos">
             {allImages.map((image) => {
               return (
@@ -122,7 +124,7 @@ function Upload({picupload}) {
               );
             })}
           </div>
-        </header>
+       </div>
       )}
     </div>
   );
